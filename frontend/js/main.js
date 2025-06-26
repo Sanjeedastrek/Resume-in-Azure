@@ -2,10 +2,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
     getVisitCount();
 });
 
-const functionApi = '';
+const functionApi = 'http://localhost:7071/api/getResumeCounter';
 
 const getVisitCount = () => {
-    let count = 30;
+    
     fetch(functionApi).then(response => {
         return response.json();
     }).then(response => {
@@ -17,5 +17,5 @@ const getVisitCount = () => {
         console.log(error);
     });
    
-    return count;
+    return 10;
 }

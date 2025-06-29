@@ -7,7 +7,7 @@ const functionApiAzure = "https://counter2.azurewebsites.net/api/getResumeCounte
 
 const getVisitCount = () => {
     
-    fetch(functionApi).then(response => {
+    fetch(functionApiAzure).then(response => {
         return response.json();
     }).then(response => {
         console.log("Website called function API.");
@@ -18,5 +18,5 @@ const getVisitCount = () => {
         console.log(error);
     });
    
-    return 10;
+    return;
 }

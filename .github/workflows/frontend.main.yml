@@ -30,7 +30,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "AzureResumeFrontDoorProfile" --name "AzureResumeFrontDoorProfile" --resource-group "AzureResumeFrontDoorProfile"
+           az cdn endpoint purge --content-paths  "/*" --profile-name "AzureResumeFrontDoorProfile" --name "AzureResumeFrontDoorProfile" --resource-group "RG-CloudResume"
 
   # Azure logout
     - name: logout

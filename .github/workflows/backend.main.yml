@@ -1,4 +1,4 @@
-name: Deploy Backend
+name: deploy backend2
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout codes
         uses: actions/checkout@v3
 
       - name: Set up Node

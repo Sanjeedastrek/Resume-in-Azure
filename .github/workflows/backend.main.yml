@@ -32,4 +32,4 @@ jobs:
       - name: Deploy to Azure Function
         run: |
           cd backend
-          func azure functionapp publish <counter2>
+          func azure functionapp publish counter2

@@ -33,6 +33,11 @@ jobs:
         with:
           creds: ${{ secrets.CLOUD_RESUME_SECRET }}
 
+      - name: Install Azure Functions Core Tools
+        run: |
+         npm install -g azure-functions-core-tools@4 --unsafe-perm true
+
+
       - name: Deploy to Azure Function
         run: |
           cd backend

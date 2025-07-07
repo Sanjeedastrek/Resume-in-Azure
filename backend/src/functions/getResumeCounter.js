@@ -1,6 +1,6 @@
 const { app, input, output } = require('@azure/functions');
 
-// Define Cosmos DB input binding (reads from DB)
+// Define CosmosDB input binding (reads from DB)
 const cosmosInput = input.cosmosDB({
     databaseName: 'db-cloud-resume',         // Your DB name
     containerName: 'counter',                // Your container name

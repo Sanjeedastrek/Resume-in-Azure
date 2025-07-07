@@ -40,5 +40,5 @@ jobs:
 
       - name: Deploy to Azure Function
         run: |
-          cd backend
-          func azure functionapp publish counter2
+          cd backend  
+          func azure functionapp publish getResumeCounter

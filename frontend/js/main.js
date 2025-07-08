@@ -6,17 +6,21 @@ const functionApi = 'http://localhost:7071/api/getResumeCounter';
 const functionApiAzure = "https://counter2.azurewebsites.net/api/getResumeCounter?"
 
 const getVisitCount = () => {
-    
+
     fetch(functionApiAzure).then(response => {
+        if (!response.ok) {
+            console.log("Not found");
+            throw new Error("Function API not found or returned error");
+        }
         return response.json();
     }).then(response => {
         console.log("Website called function API.");
         count = response.count;
         // count = 30;
         document.getElementById("counter").innerText = count;
-    }).catch(function(error){
+    }).catch(function (error) {
         console.log(error);
     });
-   
+
     return;
 }

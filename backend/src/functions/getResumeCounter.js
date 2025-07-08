@@ -19,7 +19,7 @@ const cosmosOutput = output.cosmosDB({
 });
 
 // Define the HTTP-triggered function
-app.http('getResumeCounter', {
+export default app.http('getResumeCounter', {
     methods: ['GET', 'POST'],
 
     authLevel: 'anonymous',

@@ -1,4 +1,6 @@
 {
+  "type": "module",
+  "main": "src/functions/getResumeCounter.js",
   "devDependencies": {
     "jest": "^30.0.4"
   }

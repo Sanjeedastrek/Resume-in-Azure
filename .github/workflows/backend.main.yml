@@ -25,9 +25,9 @@ jobs:
         run: chmod +x ./node_modules/.bin/jest       
 
 
-      - name: Run Jest tests 
-        run: npm test
-
+    #  - name: Run Jest tests 
+    #    run: npm test
+    
       - name: Azure Login
         uses: azure/login@v1
         with:

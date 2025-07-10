@@ -6,7 +6,7 @@ const cosmosInput = input.cosmosDB({
     containerName: 'counter',                // Your container name
     id: '1',                                 // Document ID to fetch
     partitionKey: '1',                       // Partition key (matches 'id' here)
-    connection: 'AzureResumeConnectionString' // Must match key in local.settings.json
+    connection: 'CloudResume_AzureBlobConnectionString' // Must match key in local.settings.json
 });
 
 // Define Cosmos DB output binding (writes back to DB)
@@ -15,7 +15,7 @@ const cosmosOutput = output.cosmosDB({
     containerName: 'counter',
     partitionKey: '1',
     createIfNotExists: false,
-    connection: 'AzureResumeConnectionString'
+    connection: 'CloudResume_AzureBlobConnectionString'
 });
 
 // Define the HTTP-triggered function

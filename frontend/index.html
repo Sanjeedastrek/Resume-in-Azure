@@ -1,98 +1,208 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Sanjeeda">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+  <title>Sanjeeda's Resume</title>
+  <script type="text/javascript" src="js/main.js"></script>
 
-    <title>Sanjeeda's Resume</title>
-    <script type="text/javascript" src="js/main.js"></script>
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet" />
 
-    <!-- Custom styles for this template -->
-    <link href="css/soon.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet" />
+</head>
 
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+<body id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="#page-top"><img src="logo-wild.png" alt="logo"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet'
-      type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    
-  </head>
-  <!-- START BODY -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Masthead-->
+  <header class="masthead">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+      <div class="d-flex justify-content-center">
+        <div class="text-center">
+          <h1 class="mx-auto my-0 text-uppercase">Journey of Fate</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">This is where you can learn who I am, what I stand for, and how to
+            connect with me.</h2>
+          <a class="btn btn-primary cta-button" href="#inspiration">How it started</a>
+          <h5 class="text-white-50 mx-auto mt-2 mb-5 fst-italic mt-5">The page was visited <a id="counter"></a> times
+          </h5>
 
-<body class="nomobile">
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- About-->
+  <section class="about-section text-center" id="inspiration">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="text-white mb-4">Inspired by The Cloud Resume Challenge</h2>
+          <p class="text-white-50">
+            It all started with a desire to get hands-on experience in Cloud. I stumbled upon a challenge to test the
+            waters, and what began as a small experiment turned into reality: my very own resume site. What I dragged
+            along for so long finally came to life, thanks to this journey.
+          </p>
+        </div>
+      </div>
 
-  <!-- START HEADER -->
-  <section id="header">
-    <div class="container">
-      <header>
-        <!-- HEADLINE -->
-        <h1 data-animated="GoIn"><b>Career Upd@te</b> is coming soon...</h1>
-      </header>
 
-      <div class="col-lg-4 col-lg-offset-4 mt centered">
-        <h4>What's up</h4>
-        <form class="form-inline" role="form">
-          <div class="form-group">
-            <label class="sr-only" for="exampleInputEmail2">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
-          </div>
-          <button type="submit" class="btn btn-info">Submit</button>
-        </form>
-        <p>This page has been viewed <a id="counter"></a> times </p>
-        <p>The template is inspired by Themezy</p>
+    </div>
+  </section>
+  <!-- Projects-->
+  <section class="projects-section text-center bg-light " id="Projects">
+
+    <div class="container px-4 px-lg-5">
+      <!-- Featured Project Row-->
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <h1 class="mx-auto my-4 text-uppercase">Projects Highlighted</h1>
+        <div class="col-lg-8">
+
+          <h2 class="mb-4"> Cloud Resume Challenge Highlights</h2>
+          <p class="text-black-50 project-desc">
+            I built and deployed a full-stack serverless web application using Azure services. The frontend is hosted on
+            Azure Blob Storage with static website hosting and integrated with Azure Front Door for global content
+            delivery and custom domain management. The backend is powered by Azure Functions using the Node.js v4 model,
+            connected to Azure Cosmos DB to track and store visitor counts. I implemented CI/CD pipelines through GitHub
+            Actions for both frontend and backend deployments, and configured CORS, DNS, and custom domain validation.
+            The project also included setting up budget alerts and monitoring through Azure Cost Management.
+          </p>
+          <a class="btn btn-primary cta-button" href="https://github.com/Sanjeedastrek/Resume-in-Azure">More</a>
+        </div>
+      </div>
+      <div class="row gx-4 gx-lg-5 justify-content-center my-lg-4">
+        <div class="col-lg-8">
+          <h2 class="mb-4"> Splunk-Based Data Analysis</h2>
+          <p class="text-black-50 project-desc">
+            This GitHub-hosted Splunk project showcases data analysis and Visualization of U.S. Police Shootingsusing a
+            dataset from Kaggle. It includes the use
+            of event types and tags for better data organization, lookup tables to enhance the data, and calculated
+            fields to extract insights. The project also utilizes basic and parameterized macros to make search queries
+            more efficient. It features interactive reports and dashboards that provide clear visualizations and
+            summaries.
+
+
+          </p>
+          <a class="btn btn-primary cta-button" href="https://github.com/Sanjeedastrek/splunk_dashboard">More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Project One Row-->
+
+
+  <section class="text-center bg-black" id="About">
+    <div class="container px-4 px-lg-5">
+
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <h1 class="mx-auto my-4 text-uppercase text-white">About</h1>
+        <div class="col-lg-8">
+          <p class="text-white-50 project-desc">
+            I'm a passionate IT professional with a background in Computer Science and over 5 years of experience in web
+            design, development, QA, and documentation. After working in IT companies in Bangladesh, I moved to Canada
+            to deepen my expertise in Information Security.
+
+            I enjoy combining technical precision with a user-focused mindset, whether it's building secure
+            applications, testing systems, or simplifying complex processes. Currently, I'm exploring cloud technologies
+            and hands-on cybersecurity practices to shape my next chapter.
+          </p>
+
+
+        </div>
+
+
       </div>
 
     </div>
-    <!-- LAYER OVER THE SLIDER TO MAKE THE WHITE TEXTE READABLE -->
-    <div id="layer"></div>
-    <!-- END LAYER -->
-    <!-- START SLIDER -->
-    <div id="slider" class="rev_slider">
-      <ul>
-        <li data-transition="slideleft" data-slotamount="1" data-thumb="images/slider/1.jpg">
-          <img src="images/slider/1.jpg">
-        </li>
-        <li data-transition="slideleft" data-slotamount="1" data-thumb="images/slider/2.jpg">
-          <img src="images/slider/2.jpg">
-        </li>
-        <li data-transition="slideleft" data-slotamount="1" data-thumb="images/slider/3.jpg">
-          <img src="images/slider/3.jpg">
-        </li>
-        <li data-transition="slideleft" data-slotamount="1" data-thumb="images/slider/4.jpg">
-          <img src="images/slider/4.jpg">
-        </li>
-      </ul>
-    </div>
-    <!-- END SLIDER -->
+
   </section>
-  <!-- END HEADER -->
 
 
-
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/modernizr.custom.js"></script>
-
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/soon/plugins.js"></script>
-  <script src="js/soon/jquery.themepunch.revolution.min.js"></script>
-  <script src="js/soon/custom.js"></script>
+  <!-- Contact-->
+  <section class="contact-section bg-black" id="Contact">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Address</h4>
+              <hr class="my-4 mx-auto" />
+              <div class="small text-black-50">Manitoba, Canada</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4 mx-auto" />
+              <div class="small text-black-50"><a href="#!">sanjeeda.noor321@gmail.com</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4 mx-auto" />
+              <div class="small text-black-50">+1 (204) ***-***9</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social d-flex justify-content-center">
+        <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+        <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+        <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+  <!-- Footer-->
+  <footer class="footer bg-black small text-center text-white-50">
+    <div class="container px-4 px-lg-5">Copyright &copy; 2025 Sanjeeda. All rights reserved<br> Made with Free Bootstrap
+      theme Grayscale</div>
+  </footer>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+  <!-- * *                               SB Forms JS                               * *-->
+  <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
-<!-- END BODY -->
 
 </html>

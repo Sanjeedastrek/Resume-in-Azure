@@ -2,8 +2,8 @@ const { app, input, output } = require('@azure/functions');
 
 // Define CosmosDB input binding (reads from DB)
 const cosmosInput = input.cosmosDB({
-    databaseName: 'db-cloud-resume',         // Your DB name
-    containerName: 'counter',                // Your container name
+    databaseName: 'db***',         // Your DB name
+    containerName: 'c***',                // Your container name
     id: '1',                                 // Document ID to fetch
     partitionKey: '1',                       // Partition key (matches 'id' here)
     connection: 'CloudResume_AzureBlobConnectionString' // Must match key in local.settings.json
@@ -11,11 +11,11 @@ const cosmosInput = input.cosmosDB({
 
 // Define Cosmos DB output binding (writes back to DB)
 const cosmosOutput = output.cosmosDB({
-    databaseName: 'db-cloud-resume',
-    containerName: 'counter',
+    databaseName: 'db***',
+    containerName: 'c***',
     partitionKey: '1',
     createIfNotExists: false,
-    connection: 'CloudResume_AzureBlobConnectionString'
+    connection: 'CloudResume***'
 });
 
 // Define the HTTP-triggered function

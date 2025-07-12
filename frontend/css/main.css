@@ -3758,6 +3758,7 @@ textarea.form-control-lg {
   color: var(--bs-nav-tabs-link-active-color);
   background-color: var(--bs-nav-tabs-link-active-bg);
   border-color: var(--bs-nav-tabs-link-active-border-color);
+  color:#fe0865;
 }
 .nav-tabs .dropdown-menu {
   margin-top: calc(-1 * var(--bs-nav-tabs-border-width));
@@ -10994,14 +10995,15 @@ body {
 }
 
 #mainNav {
-  min-height: 3.5rem;
+  min-height: 1rem;
+  max-height: 1.5rem;
   background-color: #fff;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #fe0865;
+  border: 1px solid #fe0865;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
